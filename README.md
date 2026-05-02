@@ -83,4 +83,4 @@
 Статический сайт (HTML/CSS/JS).
 
 ## Ссылка на репозиторий
-https://github.com/NelyubovaD/README.md
+https://github.com/NelyubovaD/README.md-/blob/main/README.md
