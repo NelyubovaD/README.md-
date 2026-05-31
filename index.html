@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat your eyelashes and fly up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Bat your eyelashes and fly up</h1>
+            <p>Всё о накладных ресницах: как выборать, как наращивать, уход за ресничками</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="types.html">Виды ресниц</a></li>
+                    <li><a href="The-bends.html">Изгибы реснииц</a></li>
+                    <li><a href="glue.html">Как клеить</a></li>
+                    <li><a href="reviews.html">Обзоры брендов</a></li>
+                    <li><a href="eyelash-care.html">Уход и хранение</a></li>
+                    <li><a href="buy.html">Где купить</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+    <section class="hero">
+      <div class="container hero__content">
+        <h1>Искала, как сделать реснички? Тебе суда!</h1>
+        <p>Информационно‑практический сайт для тех, кто хочет разобраться в накладных ресницах.</p>
+        <a href="types.html" class="btn btn-primary">Выбрать свои ресницы</a>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2 class="section-title">Популярные статьи</h2>
+        <div class="cards-grid">
+          <article class="card">
+            <img src="" alt="Ленточные ресницы" class="card__img">
+            <div class="card__content">
+              <h3>Ленточные vs пучковые</h3>
+              <p>Какой формат подходит для разных случаев? Сравнение и советы.</p>
+              <a href="types.html" class="card__link">Читать →</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="" alt="Клей для ресниц">
+            <div class="card__content">
+              <h3>Какой клей лучше?</h3>
+              <p>Чёрный, прозрачный, гипоаллергенный — обзор топ-5.</p>
+              <a href="reviews.html" class="card__link">Читать →</a>
+            </div>
+          </article>
+          <article class="card">
+            <img src="" alt="Уход">
+            <div class="card__content">
+              <h3>Правильный уход</h3>
+              <p>Продлеваем жизнь накладным ресницам: чистка, хранение.</p>
+              <a href="eyelash-care.html" class="card__link">Читать →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light-bg">
+      <div class="container">
+        <h2 class="section-title">Подбери идеальные ресницы за 1 минуту</h2>
+        <div class="matcher-wrapper" id="lashMatcherApp">
+          <form id="lashForm" class="matcher-form">
+            <div class="form-group">
+              <label>Длина ресниц (мм):</label>
+              <select id="length" required>
+                <option value="8">8 мм (естественные)</option>
+                <option value="10">10 мм (средние)</option>
+                <option value="12">12 мм (выразительные)</option>
+                <option value="14">14 мм (драматичные)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Изгиб:</label>
+              <select id="curl" required>
+                <option value="B">B (натуральный)</option>
+                <option value="C">C (универсальный)</option>
+                <option value="D">D (кукольный эффект)</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label>Желаемый эффект:</label>
+              <select id="effect" required>
+                <option value="natural">Натуральный</option>
+                <option value="volume">Объёмный</option>
+                <option value="dramatic">Драматичный (3D)</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Подобрать</button>
+          </form>
+          <div id="matcherResult" class="matcher-result"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__content">
+      <p>© 2025 Bat your eyelashes and fly up · Всё о накладных ресницах</p>
+      <div class="footer__social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="Telegram"><i class="fab fa-telegram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  
+</body>
+</html>
