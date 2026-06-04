@@ -1,0 +1,337 @@
+:root {
+  --bg-primary: #F9F0FF;
+  --bg-secondary: #EADBFF;
+  --text-primary: #4A2A6E;
+  --text-secondary: #7B529C;
+  --accent: #9B6BCF;
+  --accent-hover: #8254B3;
+  --card-bg: #FFFFFF;
+  --border: #D9C4F5;
+  --header-bg: #D4A9F2;
+  --footer-bg: #F3E8FF;
+  --btn-primary-bg: linear-gradient(135deg, #9B6BCF, #7B529C);
+  --btn-primary-text: #FFFFFF;
+  --shadow: rgba(75, 42, 107, 0.15);
+}
+
+body.dark {
+  --bg-primary: #2A1F3C;
+  --bg-secondary: #3E2F5A;
+  --text-primary: #E0D5F5;
+  --text-secondary: #C4B3E0;
+  --accent: #A98BD6;
+  --accent-hover: #9273C0;
+  --card-bg: #3A2B4A;
+  --border: #5A457A;
+  --header-bg: #4A3A5C;
+  --footer-bg: #352845;
+  --btn-primary-bg: linear-gradient(135deg, #A98BD6, #8A6FB8);
+  --btn-primary-text: #2A1F3C;
+  --shadow: rgba(0, 0, 0, 0.4);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', 'Arial', sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--header-bg);
+  padding: 2rem 0;
+  text-align: center;
+  color: var(--text-primary);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+}
+
+header p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+  color: var(--text-secondary);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 1.8rem;
+}
+
+nav a {
+  color: var(--text-primary);
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  background: rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(2px);
+}
+
+nav a:hover {
+  background: rgba(255, 255, 255, 0.35);
+  transform: translateY(-2px);
+  color: #FFFFFF;
+}
+
+main {
+  padding: 3rem 0;
+  min-height: 70vh;
+}
+
+h2 {
+  color: var(--accent);
+  font-size: 2.2rem;
+  margin: 1.5rem 0 1rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--bg-secondary);
+  display: inline-block;
+}
+
+h3 {
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  margin-top: 1.8rem;
+  margin-bottom: 0.8rem;
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+ul,
+ol {
+  margin: 1rem 0 1.5rem 1.8rem;
+}
+
+li {
+  margin-bottom: 0.4rem;
+  line-height: 1.5;
+  color: var(--text-secondary);
+}
+
+strong {
+  color: var(--accent);
+}
+
+.highlight {
+  background-color: var(--bg-secondary);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border-left: 5px solid var(--accent);
+  margin: 2rem 0;
+}
+
+.store-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.store-name {
+  font-weight: 600;
+  color: var(--text-primary);
+  flex: 0 0 200px;
+}
+
+.tip-box {
+  background-color: var(--bg-primary);
+  padding: 1.2rem;
+  border-radius: 12px;
+  border: 1px dashed var(--accent);
+  margin: 2rem 0;
+}
+
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.8rem;
+  margin: 2rem 0;
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px var(--shadow);
+  transition: transform 0.25s, box-shadow 0.25s;
+  flex: 1 1 280px;
+  padding: 1.2rem;
+  border: 1px solid var(--border);
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(75, 42, 107, 0.2);
+}
+
+.card h4 {
+  font-size: 1.3rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  padding: 0.6rem 1.2rem;
+  border-radius: 40px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.2s;
+  border: none;
+  cursor: pointer;
+  margin: 0.5rem 0.2rem;
+}
+
+.btn-small {
+  padding: 0.3rem 0.9rem;
+  font-size: 0.85rem;
+}
+
+.btn:hover {
+  transform: scale(0.97);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: var(--footer-bg);
+  padding: 2rem 0;
+  text-align: center}
+
+.store-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.store-card {
+    position: relative;
+    height: 320px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: var(--bg-secondary); 
+    background-image: var(--bg-image); 
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    align-items: flex-end; 
+    padding: 1.5rem;
+}
+
+.store-card[data-bg] {
+    --bg-image: var(--data-bg);
+}
+
+.store-card::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(42, 31, 60, 0.9), transparent); 
+    pointer-events: none;
+}
+
+.store-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.store-card__content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.store-badge {
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--text-primary);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.2rem 0.6rem;
+    border-radius: 99px;
+    margin-bottom: 0.5rem;
+    align-self: flex-start;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.store-card h4 {
+    font-size: 1.5rem;
+    color: #fff; 
+    margin: 0 0 0.5rem 0;
+    line-height: 1.2;
+}
+
+.store-card p {
+    color: rgba(255, 255, 255, 0.9); 
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+}
+
+.store-card .btn {
+    background: #fff;
+    color: var(--text-primary);
+    padding: 0.6rem 1.2rem;
+    border-radius: 50px;
+    font-weight: 700;
+    text-decoration: none;
+    align-self: flex-start;
+    transition: all 0.2s;
+}
+
+.store-card .btn:hover {
+    background: var(--accent);
+    color: #fff;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+    .store-card {
+        height: 280px;
+    }
+    .store-card h4 {
+        font-size: 1.3rem;
+    }
+}
