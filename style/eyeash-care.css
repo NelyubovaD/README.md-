@@ -30,7 +30,6 @@ body.dark {
   --shadow: rgba(0, 0, 0, 0.4);
 }
 
-
 .theme-toggle-btn {
   position: fixed;
   bottom: 20px;
@@ -110,7 +109,6 @@ nav a {
   font-weight: 500;
   transition: all 0.3s ease;
   background: rgba(255, 255, 255, 0.35);
-  backdrop-filter: blur(2px);
 }
 
 nav a:hover {
