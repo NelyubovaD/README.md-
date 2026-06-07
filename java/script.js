@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
     font-size: 0.9rem;
     font-weight: 600;
     margin-bottom: 8px;
-    color: var(--text);
+    color: #F9F0FF;
   `;
 
   const favList = document.createElement('ul');
